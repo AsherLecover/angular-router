@@ -9,37 +9,28 @@ import { StarListComponent } from './nav-components/star-list/star-list.componen
 import { OtherListComponent } from './nav-components/other-list/other-list.component';
 import { MyFormComponent } from './nav-components/my-form/my-form.component';
 import { FormGuardServiceService } from './services/form-guard-service.service';
+import { PageNotFoundComponent } from './nav-components/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
   { path:'db', component:WrapperComponent ,
       children:[
         { path:'persons',   component:PersonListComponent},
-        { path:'stars',     component:StarListComponent},
-        { path:'',          redirectTo:'db', pathMatch: 'full'},
-        { path:'**',        redirectTo:'db', pathMatch: 'full'},]
-
+        { path:'stars',     component:StarListComponent}]
   },
 
   { path:'other', component:OtherListComponent ,
       children:[
         { path:'c1',   component:C1Component},
         { path:'c2',     component:C2Component},
-        { path:'c3',     component:C3Component},
-        { path:'',          redirectTo:'db', pathMatch: 'full'},
-        { path:'**',        redirectTo:'db', pathMatch: 'full'},],
+        { path:'c3',     component:C3Component},],
         
   },
   {path: 'form', component: MyFormComponent,
-        children:[
-        { path:'',          redirectTo:'db', pathMatch: 'full'},
-        { path:'**',        redirectTo:'db', pathMatch: 'full'},],
-        canDeactivate:[FormGuardServiceService]
-      }
-  
-  
-
-      ]
+       canDeactivate:[FormGuardServiceService]},
+      { path:'',          redirectTo:'db', pathMatch: 'full'},
+      { path:'**',        component: PageNotFoundComponent}
+  ]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

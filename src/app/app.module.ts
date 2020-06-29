@@ -11,7 +11,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { PersonListComponent } from './nav-components/person-list/person-list.component';
 import { StarListComponent } from './nav-components/star-list/star-list.component';
 import { OtherListComponent } from './nav-components/other-list/other-list.component';
-import { MyFormComponent } from './nav-components/my-form/my-form.component'
+import { MyFormComponent } from './nav-components/my-form/my-form.component';
+import { PageNotFoundComponent } from './nav-components/page-not-found/page-not-found.component'
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MyFormComponent } from './nav-components/my-form/my-form.component'
     PersonListComponent,
     StarListComponent,
     OtherListComponent,
-    MyFormComponent
+    MyFormComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

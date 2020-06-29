@@ -26,6 +26,8 @@ export class MyFormComponent implements OnInit {
       this.arr2 = []
       this.svc.formIsFull = true
     }
+   
+    
     
     
   }

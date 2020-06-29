@@ -486,8 +486,8 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\angular projects\router\node_modules\bootstrap\dist\css\bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
-module.exports = __webpack_require__(/*! C:\angular projects\router\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Users\stu\Desktop\angular-router\node_modules\bootstrap\dist\css\bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
+module.exports = __webpack_require__(/*! C:\Users\stu\Desktop\angular-router\src\styles.css */"./src/styles.css");
 
 
 /***/ })
