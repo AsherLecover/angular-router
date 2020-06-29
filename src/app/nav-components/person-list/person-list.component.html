@@ -1,0 +1,31 @@
+<p>person-list works!</p>
+<div *ngIf="db"> 
+<table>
+    <thead>
+        <tr>
+            <th
+                *ngFor="let key of keysArr">
+                {{key}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr
+            *ngFor="let i of db ">
+            <td>{{i.id}}
+            </td>
+            <td>{{i.first_name}}
+            </td>
+            <td>{{i.last_name}}
+            </td>
+            <td>{{i.email}}
+            </td>
+            <td>{{i.gender}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+

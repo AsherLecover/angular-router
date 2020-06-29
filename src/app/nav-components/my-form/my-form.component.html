@@ -1,0 +1,21 @@
+<input placeholder="First Name" #inpFN type="text"><br><br>
+
+<input placeholder="Last Name" #inpLN type="text"><br><br>
+
+<input placeholder="name@example.com" #inpM type="email"><br><br>
+
+<input placeholder="Phone Number" #inpPN type="text"><br><br>
+
+<button class="btn btn-success" (click)="saveDate(inpFN, inpLN, inpM, inpPN)">Save Details </button><br><br>
+<button class="btn btn-primary"  (click)=showWorkers()>Show Workers</button>
+
+
+<div>
+<div *ngIf="createDiv" style="display: flex">
+    <ul  *ngFor="let i of arr"  style="background-color: aqua ; width: 220px; height: 120px; ; border: tan solid 3px; margin: 5px; padding: 30px;">
+        <li *ngFor="let j of i">{{j}} </li>
+    </ul>
+</div>
+
+</div>
+
